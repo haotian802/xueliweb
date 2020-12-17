@@ -1,0 +1,95 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+body{
+	text-align:center;
+	font-family: "宋体", Arial;
+	margin:0;
+	padding:0;
+	background:#FFF;
+	font-size:12px;
+	color:#a3a1a1;
+}
+ul,ol,li {
+    list-style:none;
+}
+
+table,td,tr,th,input,select{
+    font-size:12px;
+}
+input {
+    font-family:Arial;
+}
+table{
+    border-collapse:collapse;
+}
+a:link {
+    color:#a3a1a1;
+    text-decoration:none;
+}
+a:visited {
+    color:#a3a1a1;
+    text-decoration:none;
+}
+a:hover {
+    color:#f9b85f;
+    text-decoration:underline;
+}
+a:active {
+    color:#f9b85f;
+}
+.clear {
+    zoom:1;
+}
+.clear:after {
+    content:'';
+    display:block;
+    clear:both;
+    height:0px;
+}
+.f12{
+    font-size:12px;
+}
+.f14{
+    font-size:14px;
+}
+.fb{
+    font-weight:800;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.f400{
+    font-weight:400;
+}
+
+.red{
+    color:#F00;
+}
+.gray{
+    color:#999;
+}
+.white{
+    color:#fff;
+}
+
+.text_right{
+    text-align:right;
+}
+.text_left{
+    text-align:left;
+}
+.text_center{
+    text-align:center;
+}
+
+.auto{
+    width:1000px;
+	margin:0 auto;
+	text-align:left;
+}

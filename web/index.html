@@ -1,0 +1,383 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/css.css"/>
+<link rel="stylesheet" type="text/css" href="css/basic.css"/>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<style>
+	.button{
+		background-color: red;
+	}
+</style>
+<body>
+<div class="top">
+    <div class="to">
+        <p>网罗天下图书 传承中华文明</p>
+        <ul>
+            <li>
+                <a href="#">购物车</a>
+            </li>
+            <li>
+                <a href="#">注册</a>
+            </li>
+            <li>
+                <input type="button" class="button" value="登录" id="button1">
+            </li>
+        </ul>
+    </div>
+    <div class="clearit"></div>
+</div>
+
+<div class="lg">
+    <div class="to">
+        <div class="logo">
+            <img src="images/logo.jpg" />
+        </div>
+        <div class="sou">
+            <input name="" type="text" />
+            <p>
+                <a href="#" id="sousuo">搜索</a>
+            </p>
+        </div>
+    </div>
+    <div class="clearit"></div>
+</div>
+
+<div class="dao">
+    <ul>
+        <li>
+            <a href="index.html">首页</a>
+        </li>
+        <li>
+            <a href="#">书店区</a>
+        </li>
+        <li>
+            <a href="#">书摊区</a>
+        </li>
+        <li>
+            <a href="#">新书</a>
+        </li>
+        <li>
+            <a href="#">资讯</a>
+        </li>
+    </ul>
+</div>
+
+<div class="nav">
+    <div class="left">
+        <ul>
+            <li class="listBack">图书 </li>
+            <li>
+                <a href="#">线装古籍/民国旧书</a>
+            </li>
+            <li>
+                <a href="#">期刊/报纸/外文原版</a>
+            </li>
+            <li>
+                <a href="#">国学古籍/收藏鉴赏</a>
+            </li>
+            <li>
+                <a href="#">小说/文学语言文字</a>
+            </li>
+            <li>
+                <a href="#">历史/地理/艺术</a>
+            </li>
+            <li>
+                <a href="#">政治/法律/军事</a>
+            </li>
+            <li>
+                <a href="#">经济/社科/综合</a>
+            </li>
+            <li>
+                <a href="#">童书/生活/体育</a>
+            </li>
+            <li>
+                <a href="#">工程技术/互联网</a>
+            </li>
+            <li>
+                <a href="#">自然科学/医药卫生</a>
+            </li>
+            <li>
+                <a href="#">教材/教辅/考试</a>
+            </li>
+            <li>
+                <a href="#">红色文献/签名本</a>
+            </li>
+
+            <li class="listBack">艺术品与收藏</li>
+            <li>
+                <a href="#">名人墨迹/名人字画</a>
+            </li>
+            <li>
+                <a href="#">古旧地图/照片影像</a>
+            </li>
+            <li>
+                <a href="#">连环画/版画宣传画</a>
+            </li>
+            <li>
+                <a href="#">邮票税票/钱币</a>
+            </li>
+            <li>
+                <a href="#">碑帖印谱/文房雅玩</a>
+            </li>
+            <li>
+                <a href="#">玉石金模木器/漆器</a>
+            </li>
+            <li>
+                <a href="#">陶器瓷器/工艺品</a>
+            </li>
+            <li>
+                <a href="#">红色收藏/收藏杂项</a>
+            </li>
+
+            <li class="listBack">文创与周边</li>
+            <li>
+                <a href="#">笔墨/纸本/卡片</a>
+            </li>
+            <li>
+                <a href="#">日历/</a>
+            </li>
+            <li>
+                <a href="#">/摆件挂画</a>
+            </li>
+            <li>
+                <a href="#">动漫影视周边</a>
+            </li>
+
+        </ul>
+    </div>
+    <div>
+        <div class="da">
+            <div class="ban">
+               <script type="text/javascript" >
+                    var widths=1000;
+                    var w=2;
+                    var widthss=widths+w;
+                    var heights=327;
+                    var heightss=heightss+w;
+                    var heightt=20;
+                    var counts=3;
+                    img1=new Image();img1.src='images/ban.jpg';
+                    url1=new Image();url1.src='#';
+                    img2=new Image();img2.src='images/ban2.jpg';
+                    url2=new Image();url2.src='#';
+                    img3=new Image();img3.src='images/ban1.jpg';
+                    url3=new Image();url3.src='#';
+                    var nn=1;
+                    var key=0;
+                    var tt;
+                    function change_img()
+                    {
+                        if(key==0)
+                        {
+                            key=1;
+                        }
+                        else if(document.all)
+                            {
+                                document.getElementById("pic").filters[0].Apply();
+                                document.getElementById("pic").filters[0].Play(duration=2);
+                                document.getElementById("pic").filters[0].Transition=23;
+                            }
+                        eval('document.getElementById("pic").src=img'+nn+'.src');
+                        eval('document.getElementById("url").href=url'+nn+'.src');
+                        for (var i=1;i<=counts;i++)
+                            {
+                                document.getElementById("xxjdjj"+i).className='axx';
+                            }
+                        document.getElementById("xxjdjj"+nn).className='bxx';
+                        nn++;
+                        if(nn>counts)
+                        {
+                            nn=1;
+                        }
+                        tt=setTimeout('change_img()',4000);
+                    }
+                    function changeimg(n)
+                    {
+                        nn=n;
+                        window.clearInterval(tt);
+                        change_img();
+                    }
+                    document.write('<style>');
+                    document.write('.axx{padding:1px 6px;margin-left:3px;border-left:#cccccc 1px solid;font-size:12px;}');
+                    document.write('a.axx:link,a.axx:visited{text-decoration:none;color:#666;');
+                    document.write('line-height:12px;font:12px sans-serif;background-color:#eee;border:1px solid #666}');
+                    document.write('.bxx{padding:1px 6px;margin-left:3px;border-left:#cccccc 1px solid;}');
+                    document.write('a.bxx:link,a.bxx:visited{text-decoration:none;color:#111;');
+                    document.write('line-height:12px;font:12px sans-serif;background-color:#fff;border:1px solid #111}');
+                    document.write('</style>');
+
+                    document.write('<div style="width:'+widthss+'px;height:'+heights+'px;');
+                    document.write('overflow:hidden;text-overflow:clip;float:left;">');
+                    document.write('<div><a id="url" target="_blank"><img id="pic" ');
+                    document.write('style="border:0;');
+                    document.write('FILTER: progid:DXImageTransform.Microsoft.RevealTrans (duration=2,transition=23)"');
+                    document.write(' width='+widths+' height='+heights+' /></a></div>');
+                    document.write('<div style="filter:alpha(style=1,opacity=10,finishOpacity=90);');
+                    document.write('width:100%-2px;text-align:right;');
+                    document.write('top:-19px;position:relative;margin:-5px 9px 0 1px;height:22px;line-height:22px;');
+                    document.write('z-index:4000;"><div style="height:22px;line-height:22px;padding:2px 0 0 0;">');
+                    for(var i=1;i<counts+1;i++)
+                    {
+                        document.write('<a href="javascript:changeimg('+i+');" id="xxjdjj'+i+'"');
+                        document.write(' class="axx" target="_self">'+i+'</a>');
+                    }
+                    document.write('</div></div></div>');
+                    change_img();
+                </script>
+            </div>
+            <div class="hao">
+                <h2>好书推荐</h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/t1.jpg" width="140" height="190" />
+                            <br />无尽绿<br />
+                            <samp>宋乐天 著</samp>
+                            <br />
+                        </a>
+                    <li>
+                        <a href="#">
+                            <img src="images/t2.jpg" width="140" height="190" />
+                            <br />未知大学<br />
+                            <samp> [智利] 罗贝托·波拉尼奥 著</samp>
+                            <br />
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/t3.jpg" width="140" height="190" />
+                            
+                            <samp>[阿根廷] 科塔萨尔 著 </samp>
+                            <br />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/t4.jpg" width="140" height="190" />
+                            <br />乡下人的悲歌<br />
+                            <samp>J.D. 著 ； 万斯 著</samp>
+                            <br />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/t5.jpg" width="140" height="190" />
+                            <br />摄影的艺术<br />
+                            <samp> [美] Bruce Barnbaum 著 </samp>
+                            <br />
+                        </a>
+                    
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/t6.jpg" width="140" height="190" />
+                            <br />“空间”的美术史<br />
+                            <samp> 巫鸿 著</samp>
+                            <br />
+                        </a>
+                      
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/t7.jpg" width="140" height="190" />
+                            <br />篆刻五十讲(增订本)<br />
+                            <samp> 吴颐人 著</samp>
+                            <br />
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/t8.jpg" width="140" height="190" />
+                            <br />雪<br />
+                            <samp>[[土] 帕慕克 著 </samp>
+                            <br />
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/t9.jpg" width="140" height="190" />
+                            <br />不安公主<br />
+                            <samp> Chiara Gamberale  著</samp>
+                            <br />
+                        </a>
+                     
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/t10.jpg" width="140" height="190" />
+                            <br />述林1<br />
+                            <samp> 张钧 编</samp>
+                            <br />
+                        </a>
+                   
+                    </li>
+                </ul>
+                <div class="clearit"></div>
+            </div>
+            <div class="hao">
+                <h2>柏书网新书广场</h2>
+                <div class="zuo">
+                    <a href="#">
+                        <img src="images/t11.jpg" width="300" height="225" />
+                        <p>子安签名钤印《藏书票之爱》毛边本
+                            <br />
+                            <samp>166枚书票经典，100篇精准解读，四色全彩印刷，美国黄金时期五大宗师杰作</samp>
+                            <br />
+                            <br>
+                       
+                        </p>
+                    </a>
+                </div>
+                <div class="zuo">
+                    <a href="#">
+                        <img src="images/t12.jpg" width="300" height="225" />
+                        <p>海飞签名《惊蛰如此美好》毛边本
+                            <br />
+                            <samp>春如海，惊蛰如连绵汹涌的浪 ,小说家、编剧海飞讲述生活和剧本的零碎慌张。</samp>
+                            <br />
+                            <br>
+                        
+                        </p>
+                    </a>
+                </div>
+                <div class="zuo">
+                    <a href="#">
+                        <img src="images/t13.jpg" width="300" height="225" />
+                        <p>《梵·高手稿》毛边本
+                            <br />
+                            <samp>打开百年前泛黄的信笺与画册，唤醒后印象派大师梵·高的艺术灵魂。</samp>
+                            <br />
+                            <br>
+            
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="clearit"></div>
+            <div class="tu">
+                <img src="images/t14.jpg" width="320" height="136" />
+                <img src="images/t15.jpg" width="320" height="136"  style=" margin-left:10px; margin-right:10px;"/>
+                <img src="images/t16.jpg" width="320" height="136" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="foot">你要的书都在</div>
+</body>
+<script>
+	var select=document.getElementById("sousuo");
+	select.onclick=function(){
+		alert("访问的页面不存在");
+	}
+	var button1=document.getElementById("button1");
+	button1.onclick=function(){
+   window.open("xueli.html");
+}
+
+</script>
+</html>

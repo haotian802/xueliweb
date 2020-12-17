@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <style>
+    .contentFirst{
+        width: 850px;
+        margin: 0 auto;
+    }
+    .contentSecond{
+        display: inline-block;
+        width: 350px;
+        float: left;
+    }
+    .button1{
+        display: block;
+        height: 40px;
+        width: 300px;
+        border: 1px solid gray;
+        margin: 0 auto;
+    }
+    .button1 input{
+        border-color: white;
+        height: 30px;
+        margin-right: 45px;
+        border: none;
+        outline-color: invert;
+        outline-style: none;
+        margin-top: 3px;
+    }
+    .details{
+        line-height: 40 px;
+        font-size: 12 px;
+    }
+    .button2{
+        width: 300px;
+        margin: auto;
+    }
+    .button2 button{
+        height: 40px;
+        width: 300px;
+        background-color:red;
+        color: white;
+        border: none;
+    }
+    #A1{
+        height: 25px;
+        font-size: 13px;
+        color: gray;
+        line-height: 25px;
+    }
+    #A2{
+        height: 25px;
+        font-size: 13px;
+        color: gray;
+        line-height: 25px;
+    }
+    .floatRall{
+        display: inline-block;
+        margin-left: 150px;
+    }
+    #distanceFirst{
+        line-height: 45px;
+        height: 45px;
+        color: red;
+    }
+    #distanceSecond{
+        height: 45px;
+        line-height: 45px;
+        color: red;
+    }
+    #distanceThird{
+        height: 45px;
+        line-height: 45px;
+        color: red;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="contentFirst">
+        <div class="contentSecond clear"><div class="button1 clear"><span class="word">&nbsp;&nbsp;用&nbsp;户&nbsp;名</span>
+            <input type="text" name="keyName" id="keyName2" onfocus="getPrint1()" onblur="onBlur1()"></div>
+            <p id="A1">&nbsp;</p>
+            <div class="button1 clear"> <span class="details">&nbsp;&nbsp;设置密码</span>
+                <input type="password" name="cipher" id="cipher1" onfocus="getPrint2()" onblur="onBlur2()">
+            </div>
+            <p id="A2">&nbsp;</p>
+            <div class="button2">
+                <button type="submit" onclick="commitment()">立即注册</button>
+            </div>
+        </div>
+        <div class="floatRall clear">
+            <p id="distanceFirst">&nbsp;</p>
+            <p id="distanceSecond">&nbsp;</p>
+            <p id="distanceThird">&nbsp;</p>
+        </div>
+    </div>
+        </body>
+        <script>
+            function getPrint1(){
+                document.getElementById("A1").innerHTML="支持中文数字";
+            }
+            function onBlur1(){
+                if(document.getElementById("keyName2").value!=""){
+                    document.getElementById("A1").innerHTML="&nbsp";
+                }else{
+                    document.getElementById("A1").innerHTML="用户名不能为空";
+                }
+            }
+            function getPrint2(){
+                document.getElementById("A2").innerHTML="建议至少使用两种字符组合";
+            }
+            function onBlur2(){
+                if(document.getElementById("cipher1").value!=""){
+                    document.getElementById("A2").innerHTML="&nbsp";
+                }else{
+                    document.getElementById("A2").innerHTML="密码不能为空";
+                }
+            }
+            function commitment(){
+                var code1,code2,code3;
+                if(document.getElementById("keyName2").value!=""&& document.getElementById("cipher1").value!=""){
+                    code1=document.getElementById("distanceFirst");
+                    code1.innerHTML="注册成功！";
+                    code2=document.getElementById("distanceSecond");
+                    var name5=document.getElementById("keyName2").value;
+                    code2.innerHTML="用户名"+name5;
+                    code3=document.getElementById("distanceThird");
+                    var cipherS=document.getElementById("cipher1").value;
+                    code3.innerHTML="密码:"+cipherS;
+                }
+            }
+</script>
+</html>
